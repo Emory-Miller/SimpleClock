@@ -89,24 +89,24 @@ public class SimpleClock extends JFrame {
         rumSimpleClock();
     }
 
-//        public void setTimer() {
-//            while (true) {
-//                time = timeFormat.format(Calendar.getInstance().getTime());
-//                timeLabel.setText(time);
-//
-//                day = dayFormat.format(Calendar.getInstance().getTime());
-//                dayLabel.setText(day);
-//
-//                date = dateFormat.format(Calendar.getInstance().getTime());
-//                dateLabel.setText(date);
-//
-//                try {
-//                    Thread.sleep(1000);
-//                } catch (Exception e) {
-//                    e.getStackTrace();
-//                }
-//            }
-//        }
+        public void setTimer() {
+            while (true) {
+                time = timeFormat.format(Calendar.getInstance().getTime());
+                timeLabel.setText(time);
+
+                day = dayFormat.format(Calendar.getInstance().getTime());
+                dayLabel.setText(day);
+
+                date = dateFormat.format(Calendar.getInstance().getTime());
+                dateLabel.setText(date);
+
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    e.getStackTrace();
+                }
+            }
+        }
 
     public void rumSimpleClock() {
         time = timeFormat.format(Calendar.getInstance().getTime());
